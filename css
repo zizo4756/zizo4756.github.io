@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centrera innehållet */
+    align-items: flex-start; /* Justera till toppen av skärmen */
+    min-height: 100vh; /* Full höjd på skärmen */
+}
+
+.container {
+    max-width: 800px; /* Öka bredden på container */
+    width: 100%; /* Gör container fullbredd */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FF69B4; /* Rosa kant */
+    text-align: center; /* Centrera texten */
+}
+
+.tiramisu-section {
+    border: 2px solid #FF69B4; /* Rosa kant */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px 0; /* Avstånd ovanför och nedanför */
+    background-color: #fff; /* Vit bakgrund */
+}
+
+h1 {
+    color: #FF69B4; /* Rosa rubrik */
+}
+
+button {
+    position: absolute; /* Gör knappen absolut positionerad */
+    top: 20px; /* Placera knappen 20px från toppen */
+    right: 20px; /* Placera knappen 20px från höger */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FF69B4; /* Rosa knapp */
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF1493; /* Mörkare rosa vid hover */
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode .container {
+    background-color: #444; /* Mörkare bakgrund i dark mode */
+    border-color: #FF1493; /* Mörkare rosa kant i dark mode */
+}
+
+.dark-mode h1 {
+    color: #FF1493; /* Mörkare rosa rubrik i dark mode */
+}
+
+.dark-mode button {
+    background-color: #555; /* Mörkare knapp i dark mode */
+    color: #fff; /* Vit text i dark mode */
+}
+
+.dark-mode button:hover {
+    background-color: #777; /* Ljusa upp knappen vid hover i dark mode */
+}
+
+.tiramisu-img {
+    width: 100%;
+    max-width: 400px; /* Justera storleken efter behov */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Media query för responsiv design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    button {
+        width: 100%;
+    }
+    
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
